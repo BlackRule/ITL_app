@@ -20,11 +20,14 @@ public class MainActivity extends AppCompatActivity {
 			if (id == R.id.navigation_home) {
 				mTextMessage.setText(R.string.title_home);
 				return true;
-			} else if (id == R.id.navigation_dashboard) {
-				mTextMessage.setText(R.string.title_dashboard);
+			} else if (id == R.id.navigation_profile) {
+				mTextMessage.setText(R.string.title_profile);
 				return true;
-			} else if (id == R.id.navigation_notifications) {
-				mTextMessage.setText(R.string.title_notifications);
+			} else if (id == R.id.navigation_contacts) {
+				mTextMessage.setText(R.string.title_contacts);
+				return true;
+			} else if (id == R.id.navigation_purchase) {
+				mTextMessage.setText(R.string.title_purchase);
 				return true;
 			}
 			return false;

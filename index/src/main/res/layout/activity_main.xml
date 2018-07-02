@@ -22,10 +22,17 @@
         android:id="@+id/navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="1dp"
         android:background="@color/light_green"
+        android:padding="1dp"
+        android:scrollbars="horizontal|vertical"
+        android:soundEffectsEnabled="true"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_goneMarginLeft="50dp"
         app:menu="@menu/navigation" />
 
 </android.support.constraint.ConstraintLayout>
