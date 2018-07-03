@@ -2,13 +2,18 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    
+
+    //Added:
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    //Dedda
 
 
     defaultConfig {
         applicationId "ru.itlservice39.app.app"
         minSdkVersion 15
-        targetSdkVersion 27
+//        targetSdkVersion 27
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -27,4 +32,10 @@ android {
 dependencies {
     implementation project(':index')
     implementation project(':base')
+    //Added:
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation project(':widget')
+    //Dedda
 }

@@ -12,11 +12,14 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        //Added:
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
 
 allprojects {
     repositories {
+        maven { url "https://maven.google.com" }
         google()
         jcenter()
     }
@@ -25,3 +28,15 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+///Added:
+ext {
+    minSdkVersion = 15
+    targetSdkVersion = 27
+    buildToolsVersion = "27.0.3"
+    compileSdkVersion = 27
+
+    // Libraries
+    supportLibraryVersion = "27.1.1"
+}
+//Dedda

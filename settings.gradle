@@ -1,1 +1,1 @@
-include ':index', ':app', ':base', ':instantapp'
+include ':index', ':app', ':base', ':instantapp', ':widget'
