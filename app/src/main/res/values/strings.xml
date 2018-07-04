@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">itlservice39</string>
+    <string name="title_home">Home</string>
+    <string name="title_contacts">Contacts</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_purchase">Purchase</string>
+</resources>

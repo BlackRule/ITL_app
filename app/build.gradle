@@ -2,40 +2,31 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-
-    //Added:
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
-    //Dedda
-
-
     defaultConfig {
-        applicationId "ru.itlservice39.app.app"
+        applicationId "ru.itlservice39.app"
         minSdkVersion 15
-//        targetSdkVersion 27
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-
-
+        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
-       release {
-           minifyEnabled false
-           proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-       }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
-
+    dataBinding {
+        enabled true
+    }
 }
 
 dependencies {
-    implementation project(':index')
-    implementation project(':base')
-    //Added:
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"  //FIXME
     implementation project(':widget')
-    //Dedda
+    //testImplementation 'junit:junit:4.12'
+    //androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    //androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
