@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/light_green"
-            app:itemIconTint="#000000"
-            app:itemTextColor="#000000"
+            app:itemIconTint="@color/selector_item_color"
+            app:itemTextColor="@color/selector_item_color"
             app:menu="@menu/navigation" />
 
     </RelativeLayout>

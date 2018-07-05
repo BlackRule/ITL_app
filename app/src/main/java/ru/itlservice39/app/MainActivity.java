@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+//import android.util.DisplayMetrics;
 import android.view.View;
 
 import ru.itlservice39.app.R;
@@ -106,8 +107,8 @@ public class MainActivity extends AppCompatActivity {
 	 * create fragments
 	 */
 	private void initData() {
-		fragments = new ArrayList<>(3);
-		items = new SparseIntArray(3);
+		fragments = new ArrayList<>(4);
+		items = new SparseIntArray(4);
 
 		// create fragment and add it
 		BaseFragment homeFragment = new BaseFragment();
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
 		profileFragment.setArguments(bundle);
 
 		// create  fragment and add it
-		BaseFragment contactsFragment = new BaseFragment();
+		ContactsFragment contactsFragment = new ContactsFragment();
 		bundle = new Bundle();
 		bundle.putString("title", getString(R.string.title_contacts));
 		contactsFragment.setArguments(bundle);
@@ -143,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 		items.put(R.id.navigation_home, 0);
 		items.put(R.id.navigation_profile, 1);
 		items.put(R.id.navigation_contacts, 2);
-		items.put(R.id.navigation_purchase, 2);
+		items.put(R.id.navigation_purchase, 3);
 
 		// set adapter
 		adapter = new VpAdapter(getSupportFragmentManager(), fragments);
@@ -154,6 +155,9 @@ public class MainActivity extends AppCompatActivity {
 	 * set listeners
 	 */
 	private void initEvent() {
+//		final DisplayMetrics displayMetrics=getResources().getDisplayMetrics();
+//		final float screenWidthInDp=displayMetrics.widthPixels/displayMetrics.density;
+//		final float screenHeightInDp=displayMetrics.heightPixels/displayMetrics.density;
 		// set listener to change the current item of view pager when click bottom nav item
 		bind.bnve.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 			private int previousPosition = -1;
