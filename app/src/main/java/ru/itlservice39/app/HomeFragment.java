@@ -8,15 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ru.itlservice39.app.databinding.FragContactsBinding;
+import ru.itlservice39.app.databinding.FragHomeBinding;
 
 /**
  * Created by yu on 2016/11/11.
  */
 
-public class ContactsFragment extends Fragment {
+public class HomeFragment extends Fragment {
     private String title;
-    FragContactsBinding binding;
+    FragHomeBinding binding;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,11 +28,10 @@ public class ContactsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = View.inflate(getContext(), R.layout.frag_contacts, null);
+        View view = View.inflate(getContext(), R.layout.frag_home, null);
         // bind view
 //        binding = DataBindingUtil.bind(view);
 //        binding.tvTitle.setText(title);
-//        binding.ttitle.setText("rvervrvrv");
         return view;
     }
 }

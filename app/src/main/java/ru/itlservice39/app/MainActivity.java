@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 		items = new SparseIntArray(4);
 
 		// create fragment and add it
-		BaseFragment homeFragment = new BaseFragment();
+		HomeFragment homeFragment = new HomeFragment();
 		Bundle bundle = new Bundle();
 		bundle.putString("title", getString(R.string.title_home));
 		homeFragment.setArguments(bundle);

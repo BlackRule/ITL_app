@@ -4,8 +4,23 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/green</item>
-        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorPrimaryDark">@color/green</item>
         <item name="colorAccent">#000000</item>
     </style>
 
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <!--<item name="android:includeFontPadding">false</item>-->
+        <item name="android:padding">7dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">11.5dp</item>
+    </style>
+    <style name="top">
+    <item name="android:layout_width">match_parent</item>
+     <item name="android:layout_height">275dp</item>
+    <item name="android:background">@color/green</item>
+    <item name="android:orientation">vertical</item>
+</style>
 </resources>
