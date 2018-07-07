@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="текст текст какой-то текст, пример для текст \nДиагностика компьютера это то та то та пиу пиу я убиу , оле-оле мы выиграли гонку\nФедор Емельяненко- последний император тыры пыры ляляляля компьютера это то та то та пиу пиу я убиу , оле-оле мы выиграли гонку."
+    android:textColor="@color/light_green"
+    android:textSize="13.425dp">
+
+</TextView>
