@@ -50,7 +50,7 @@ public class HomeFragment extends Fragment {
 
 	private static class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
 		final int PAGE_COUNT = 3;
-		private String tabTitles[] = new String[]{"Tab1", "Tab2", "Tab3"};
+		private String tabTitles[] = new String[]{"Диагностика компьютеров", "Замена жесткого диска", "Tab3"};
 
 		public SampleFragmentPagerAdapter(FragmentManager fm) {
 			super(fm);
