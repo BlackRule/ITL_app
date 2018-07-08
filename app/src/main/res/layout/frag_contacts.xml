@@ -19,12 +19,15 @@
                 >
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:id="@+id/phoneOffice"
+                    android:clickable="true"
+                    >
 
 
                     <ImageView
@@ -44,12 +47,15 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="46dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:id="@+id/phoneMobile"
+                    android:clickable="true"
+                    >
 
 
                     <ImageView
@@ -70,14 +76,15 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/mapButton"
                 style="@style/button"
                 android:layout_width="151dp"
                 android:layout_height="31dp"
                 android:layout_marginLeft="117dp"
                 android:includeFontPadding="false"
                 android:text="Мы на карте"
-                android:layout_marginStart="117dp" />
+                android:layout_marginStart="117dp"
+                />
 
         </LinearLayout>
         <LinearLayout
@@ -86,7 +93,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/ttitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -103,7 +109,10 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="22dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:id="@+id/vkButton"
+                android:clickable="true"
+                >
 
 
                 <ImageView
@@ -129,7 +138,10 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="25dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:id="@+id/instaButton"
+                android:clickable="true"
+                >
 
 
                 <ImageView
